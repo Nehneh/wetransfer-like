@@ -1046,7 +1046,6 @@ return array(
     'Illuminate\\Events\\CallQueuedListener' => $vendorDir . '/laravel/framework/src/Illuminate/Events/CallQueuedListener.php',
     'Illuminate\\Events\\Dispatcher' => $vendorDir . '/laravel/framework/src/Illuminate/Events/Dispatcher.php',
     'Illuminate\\Events\\EventServiceProvider' => $vendorDir . '/laravel/framework/src/Illuminate/Events/EventServiceProvider.php',
-    'Illuminate\\Filesystem\\Cache' => $vendorDir . '/laravel/framework/src/Illuminate/Filesystem/Cache.php',
     'Illuminate\\Filesystem\\Filesystem' => $vendorDir . '/laravel/framework/src/Illuminate/Filesystem/Filesystem.php',
     'Illuminate\\Filesystem\\FilesystemAdapter' => $vendorDir . '/laravel/framework/src/Illuminate/Filesystem/FilesystemAdapter.php',
     'Illuminate\\Filesystem\\FilesystemManager' => $vendorDir . '/laravel/framework/src/Illuminate/Filesystem/FilesystemManager.php',
