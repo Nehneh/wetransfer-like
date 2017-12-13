@@ -15,6 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+<<<<<<< HEAD
 
 
 Route::get('/', function () {
@@ -22,3 +23,5 @@ Route::get('/', function () {
 });
 
 Route::resource('/input','FormController'); // Route vers page after submit
+=======
+>>>>>>> 0c0cbb93b83ca383bb7b1050e4e02c61e1e33caf
