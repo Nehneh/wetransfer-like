@@ -11,11 +11,18 @@
 |
 */
 
-Route::get('/', function () {
-    return view('forms.index');
-});
+// Route::get('/', function () {
+//     return view('forms.index');
+// });
 
 
 Route::resource('/input','FormController'); // Route vers page after submit
 
 // Route::resource('/input','FormController'); // Route vers page after submit
+// Route::get('/file','uploadControllerTim@index');
+// Route::get('/file/store','uploadControllerTim@store');
+
+
+
+Route::get('upload','uploadControllerTim@index');
+Route::post('upload','uploadControllerTim@store');
