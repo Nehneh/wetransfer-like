@@ -21,3 +21,4 @@ Route::get('/', function () {
     return view('Salut Pat');
 });
 
+Route::resource('/input','FormController'); // Route vers page after submit
