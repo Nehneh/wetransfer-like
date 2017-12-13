@@ -18,10 +18,11 @@ Route::get('/', function () {
 
 
 Route::get('/', function () {
-    return view('Salut Pat');
+    return 'Salut Pat';
 });
 
 
+<<<<<<< HEAD
 
 
 
@@ -30,3 +31,8 @@ Route::get('/', function () {
 });
 
 
+=======
+Route::get('/', function () {
+    return 'BANDE DE HMAR';
+});
+>>>>>>> 40d0f25158846622dc53adf042a45de9c285bfcf
