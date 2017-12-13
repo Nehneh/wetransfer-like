@@ -12,12 +12,10 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('forms.index');
 });
 
 
+Route::resource('/input','FormController'); // Route vers page after submit
 
-Route::get('/', function () {
-    return view('Salut Pat');
-});
-
+// Route::resource('/input','FormController'); // Route vers page after submit
