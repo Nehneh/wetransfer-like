@@ -21,3 +21,12 @@ Route::get('/', function () {
     return view('Salut Pat');
 });
 
+
+
+
+
+Route::get('/', function () {
+    return 'Salut  megatim';
+});
+
+
