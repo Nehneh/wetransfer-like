@@ -15,3 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+
+
+
+
+Route::resource('/input','FormController'); // Route vers page after submit
+
