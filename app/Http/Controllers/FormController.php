@@ -36,6 +36,9 @@ class FormController extends Controller
         return view('forms.store');
     }
 
+    Mail::to('gadri.ines@yahoo.fr')
+    ->send(new Contact($request->except('_token')));
+
     /**
      * Display the specified resource.
      *
