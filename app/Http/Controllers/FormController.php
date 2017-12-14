@@ -33,6 +33,22 @@ class FormController extends Controller
     {
         // 
 
+        // Il faut recupérer les données
+        // apres les mettres dans un mail
+
+
+
+        // apres les mettres dans une base de données
+
+        $username = $req->input('username');
+
+        echo $username;
+/*        $email = $req->input('email');
+        $youremail = $req->input('youremail');*/
+
+  /*      $data = array('username' =>$username ,'email' =>$email,'youremail' =>$youremail );
+        DB::table('laraa')->insert($data);
+        echo "C'est réussi en tant que tel !";*/
 
         //Mail::to('gadri.ines@yahoo.fr')->send(new Contact($request->except('_token')));
 
