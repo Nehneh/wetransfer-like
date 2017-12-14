@@ -53,7 +53,11 @@ class FormController extends Controller
 /*        $email = $req->input('email');
         $youremail = $req->input('youremail');*/
 
-        $data = array('username' =>$username);
+        $data = array(
+            'username' =>$username,
+            'emailfrom' =>$emailfrom,
+            'emailto' =>$emailto
+        );
         DB::table('wetransfer')->insert($data);
         //echo "C'est réussi en tant que tel !";
 
