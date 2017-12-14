@@ -42,15 +42,29 @@ class FormController extends Controller
 
         $username = $request->input('username');
 
-        echo $username;
+        // echo $username; ca, ac marche
+
 /*        $email = $req->input('email');
         $youremail = $req->input('youremail');*/
 
-  /*      $data = array('username' =>$username ,'email' =>$email,'youremail' =>$youremail );
-        DB::table('laraa')->insert($data);
-        echo "C'est réussi en tant que tel !";*/
+        $data = array('username' =>$username);
+        DB::table('wetransfer')->insert($data);
+        //echo "C'est réussi en tant que tel !";
 
         //Mail::to('gadri.ines@yahoo.fr')->send(new Contact($request->except('_token')));
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         return view('forms.store'); 
     }
