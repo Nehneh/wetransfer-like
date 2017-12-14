@@ -14,37 +14,23 @@ class uploadControllerTim extends Controller
 
      public function store(request $request)
     {
-    	return $request->file('thefile')->store('thefile');
+// echo $request;
+
+    	 $name_file_upload= $request->file('thefile');
 
 
-
-
-    		
-
-
-
-    	if ($request->haseFile('thefile')) {
-    		$request->file('thefile')->store('thefile');
+    	if ($request->hasFile('thefile')) 
+    	{
+    		$request->file('thefile')->move(public_path("/uplaods"),$name_file_upload);
     		// return $request->fichier->store('public');
-    		return 'bien jouer ';
 
-    		# code...
+    		return 'Le fichier a bien été envoyer ';
+			# code...
     	}
     	else
     	{
-    		return "Un virus a été détecter ! Veuilliez appeler au numero surtaxe 08 87 87  78 77 . Ce numero sera surtaxer de 8$/minutes! 
-    		Une attente de 1h20 est prévue goods by megaTim";
+    		return "Error";
     	}
-
-    	
-
-
-
-    	
-
-
-
-
 
     // $path = $request->file('avatar')->store(
     // 'avatars/'.$request->user()->id, 's3'
