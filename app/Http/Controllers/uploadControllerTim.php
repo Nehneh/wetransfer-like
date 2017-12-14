@@ -23,12 +23,12 @@ class uploadControllerTim extends Controller
 
 
 
-    	if ($request->haseFile('thefile')) {
+    	if ($request->haseFile('thefile')) 
+    	{
     		$request->file('thefile')->store('thefile');
     		// return $request->fichier->store('public');
     		return 'bien jouer ';
-
-    		# code...
+			# code...
     	}
     	else
     	{
