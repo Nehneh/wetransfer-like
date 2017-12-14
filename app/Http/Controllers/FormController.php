@@ -1,6 +1,10 @@
 <?php
+
 namespace App\Http\Controllers;
+
 use Illuminate\Http\Request;
+use DB;
+
 class FormController extends Controller
 {
     /**
@@ -33,7 +37,46 @@ class FormController extends Controller
     {
         // 
 
-        return view('forms.store');
+        // Il faut recupérer les données
+        // apres les mettres dans un mail
+
+
+
+        // apres les mettres dans une base de données
+
+        $username = $request->input('username');
+        $emailfrom = $request->input('emailfrom');
+        $emailto = $request->input('emailto');
+
+        // echo $username; ca, ac marche
+
+/*        $email = $req->input('email');
+        $youremail = $req->input('youremail');*/
+
+        $data = array(
+            'username' =>$username,
+            'emailfrom' =>$emailfrom,
+            'emailto' =>$emailto
+        );
+        DB::table('wetransfer')->insert($data);
+        //echo "C'est réussi en tant que tel !";
+
+        //Mail::to('gadri.ines@yahoo.fr')->send(new Contact($request->except('_token')));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        return view('forms.store'); 
     }
 
     /**

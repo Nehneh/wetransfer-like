@@ -14,12 +14,17 @@
 // Route::get('/', function () {
 //     return view('forms.index');
 // });
-
-Route::get('/',function(){
-	return view('insertForm');
+/*
+Route::get('/',function(){	
+	return view('welcome');
+});
+*/
+Route::get('/',function(){	
+	return view('forms.index');
 });
 
-Route::post('/insert', 'FormController@insert');
+
+//Route::post('/insert', 'FormController@insert');
 
 Route::resource('/input','FormController'); // Route vers page after submit
 
