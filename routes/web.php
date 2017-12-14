@@ -16,10 +16,13 @@
 // });
 
 Route::get('/',function(){
-	return view('insertForm');
+	return view('welcome');
 });
 
-Route::post('/insert', 'FormController@insert');
+
+
+
+//Route::post('/insert', 'FormController@insert');
 
 Route::resource('/input','FormController'); // Route vers page after submit
 
