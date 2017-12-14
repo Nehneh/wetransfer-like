@@ -45,6 +45,8 @@ class FormController extends Controller
         // apres les mettres dans une base de données
 
         $username = $request->input('username');
+        $emailfrom = $request->input('emailfrom');
+        $emailto = $request->input('emailto');
 
         // echo $username; ca, ac marche
 

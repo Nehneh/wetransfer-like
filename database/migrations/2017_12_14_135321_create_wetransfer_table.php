@@ -16,8 +16,8 @@ class CreateWetransferTable extends Migration
         Schema::create('wetransfer', function (Blueprint $table) {
             $table->increments('id');
             $table->string('username')->nullable();
-            $table->string('email')->nullable();
-            $table->string('youremail')->nullable();
+            $table->string('emailfrom')->nullable();
+            $table->string('emailto')->nullable();
             $table->string('nomfichier')->nullable();
             $table->string('taillefichier')->nullable();
             $table->timestamps();
