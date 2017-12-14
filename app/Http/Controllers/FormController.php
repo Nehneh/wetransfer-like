@@ -40,7 +40,7 @@ class FormController extends Controller
 
         // apres les mettres dans une base de données
 
-        $username = $req->input('username');
+        $username = $request->input('username');
 
         echo $username;
 /*        $email = $req->input('email');
