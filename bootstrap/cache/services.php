@@ -27,11 +27,12 @@
     23 => 'Laravel\\Tinker\\TinkerServiceProvider',
     24 => 'Collective\\Html\\HtmlServiceProvider',
     25 => 'Shivella\\Bitly\\BitlyServiceProvider',
-    26 => 'App\\Providers\\AppServiceProvider',
-    27 => 'App\\Providers\\AuthServiceProvider',
-    28 => 'App\\Providers\\EventServiceProvider',
-    29 => 'App\\Providers\\RouteServiceProvider',
-    30 => 'Shivella\\Bitly\\BitlyServiceProvider',
+    26 => 'Collective\\Html\\HtmlServiceProvider',
+    27 => 'App\\Providers\\AppServiceProvider',
+    28 => 'App\\Providers\\AuthServiceProvider',
+    29 => 'App\\Providers\\EventServiceProvider',
+    30 => 'App\\Providers\\RouteServiceProvider',
+    31 => 'Shivella\\Bitly\\BitlyServiceProvider',
   ),
   'eager' => 
   array (

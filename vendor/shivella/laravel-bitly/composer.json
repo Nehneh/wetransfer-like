@@ -1,0 +1,30 @@
+{
+  "name": "shivella/laravel-bitly",
+  "description": "Laravel package for generating bitly url",
+  "keywords": ["laravel", "bitly", "package"],
+  "homepage": "https://github.com/Shivella/laravel-bitly",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Wessel Strengholt",
+      "email": "wessel.strengholt@gmail.com"
+    }
+  ],
+  "autoload-dev": {
+    "psr-4": { "Tests\\": "tests/" }
+  },
+  "require": {
+    "php": ">=5.5.9",
+    "illuminate/support": "^5.1",
+    "guzzlehttp/guzzle": "~6.0"
+  },
+  "require-dev": {
+    "symfony/http-foundation": "~3.0",
+    "phpunit/phpunit": "^6.1"
+  },
+  "autoload": {
+    "psr-0": {
+      "Shivella\\Bitly": "src/"
+    }
+  }
+}
