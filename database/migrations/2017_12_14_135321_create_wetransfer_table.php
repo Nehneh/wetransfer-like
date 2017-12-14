@@ -15,6 +15,11 @@ class CreateWetransferTable extends Migration
     {
         Schema::create('wetransfer', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('username');
+            $table->string('email');
+            $table->string('youremail');
+            $table->string('nomfichier');
+            $table->string('taillefichier');
             $table->timestamps();
         });
     }
