@@ -19,6 +19,7 @@ class CreateWetransferTable extends Migration
             $table->string('emailfrom')->nullable();
             $table->string('emailto')->nullable();
             $table->string('nomfichier')->nullable();
+            $table->string('url')->nullable();
             $table->string('taillefichier')->nullable();
             $table->timestamps();
         });
