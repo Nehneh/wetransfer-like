@@ -15,6 +15,11 @@ Route::get('/', function () {
     return view('forms.index');
 });
 
+Route::get('/',function(){
+	return view('insertForm');
+});
+
+Route::post('/insert', 'FormController@insert');
 
 Route::resource('/input','FormController'); // Route vers page after submit
 

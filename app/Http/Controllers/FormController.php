@@ -10,7 +10,7 @@ class FormController extends Controller
      */
     public function index()
     {
-        return view("form.index");
+        return view("forms.index");
     }
 
     /**
@@ -33,7 +33,7 @@ class FormController extends Controller
     {
         // 
 
-        return view('form.store');
+        return view('forms.store');
     }
 
     /**
