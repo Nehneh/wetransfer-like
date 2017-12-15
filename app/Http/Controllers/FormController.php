@@ -107,7 +107,17 @@ class FormController extends Controller
 
 
 
+         
+         Mail::send('mails.contact', 
+            array(
+                //blabla
+            ),
+            function($message) {
+                    $message->from('expediteur@toto.com');
 
+                    $message->to('gadri.ines@yahoo.fr', 'Utilisateur')->subject('Voici votre lien de partage de fichier');
+                }
+        );
 
 
 

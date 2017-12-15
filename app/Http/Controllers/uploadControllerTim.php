@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Mail;
 
 class uploadControllerTim extends Controller
 {
@@ -24,7 +25,7 @@ class uploadControllerTim extends Controller
     		$request->file('thefile')->move(public_path("/uplaods"),$name_file_upload);
     		// return $request->fichier->store('public');
 
-    		return 'Le fichier a bien été envoyer ';
+    		return 'Le fichier a bien été envoyé ';
 			# code...
     	}
     	else
@@ -37,3 +38,5 @@ class uploadControllerTim extends Controller
     }
 
 }
+
+
