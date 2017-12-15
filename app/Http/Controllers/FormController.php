@@ -65,6 +65,11 @@ class FormController extends Controller
 
 //email
 
+
+        // $mail =$request->input('mail');
+        // $destinataire =$request->input('destinataire');
+        // $name_file=$$name_file_upload;
+
             Mail::send('mails.contact', 
             array(
                 //blabla
