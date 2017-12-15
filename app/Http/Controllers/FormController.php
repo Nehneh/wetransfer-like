@@ -29,7 +29,7 @@ class FormController extends Controller
 
         if ($request->hasFile('thefile')) 
         {
-            $request->file('thefile')->move(public_path("/input"),$name_file_upload);
+            $request->file('thefile')->move(public_path("/uploads"),$name_file_upload);
             // return $request->fichier->store('public');
 
 
@@ -62,6 +62,19 @@ class FormController extends Controller
 
         //Mail::to('gadri.ines@yahoo.fr')->send(new Contact($request->except('_token')));
 
+//email
+
+            Mail::send('mails.contact', 
+            array(
+                //blabla
+            ),
+            function($message) {
+                    $message->from('expediteur@toto.com');
+
+                    $message->to('gadri.ines@yahoo.fr', 'Utilisateur')->subject('Voici votre lien de partage de fichier');
+                }
+        );
+
         return view('forms.store'); 
 
            // return 'Le fichier a bien été envoyé ';
@@ -75,16 +88,7 @@ class FormController extends Controller
 
     // $path = $request->file('avatar')->store(
     // 'avatars/'.$request->user()->id, 's3'
-          Mail::send('mails.contact', 
-            array(
-                //blabla
-            ),
-            function($message) {
-                    $message->from('expediteur@toto.com');
-
-                    $message->to('gadri.ines@yahoo.fr', 'Utilisateur')->subject('Voici votre lien de partage de fichier');
-                }
-        );
+ 
 
     }
 
