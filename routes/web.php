@@ -35,7 +35,7 @@ Route::get('/',function(){
 
 Route::resource("/",'FormController');
 
-Route::resource("mails.contat",'FormController');
+Route::resource("mails.contact",'FormController');
 
 
 
