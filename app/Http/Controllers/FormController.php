@@ -6,13 +6,6 @@ use Illuminate\Http\Request;
 use DB;
 
 
-class uploadControllerTim extends Controller
-{
-   
-
-}
-
-
 
 
 
@@ -63,11 +56,11 @@ class FormController extends Controller
             'emailto' =>$emailto,
             'nomfichier' =>$name_file_upload
         );
+
         DB::table('wetransfer')->insert($data);
         //echo "C'est réussi en tant que tel !";
 
         //Mail::to('gadri.ines@yahoo.fr')->send(new Contact($request->except('_token')));
-
 
         return view('forms.store'); 
 
@@ -79,10 +72,25 @@ class FormController extends Controller
             return "Le fichier n'a pas été joint";
         }
 
+
     // $path = $request->file('avatar')->store(
     // 'avatars/'.$request->user()->id, 's3'
+          Mail::send('mails.contact', 
+            array(
+                //blabla
+            ),
+            function($message) {
+                    $message->from('expediteur@toto.com');
+
+                    $message->to('gadri.ines@yahoo.fr', 'Utilisateur')->subject('Voici votre lien de partage de fichier');
+                }
+        );
+
     }
 
+
+         
+       
 
 
     
