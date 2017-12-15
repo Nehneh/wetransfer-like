@@ -9,21 +9,6 @@
 <br>
 <div class=".col-lg-offset-4 col-lg-4">
 	<h1>upload a file</h1>
-<!-- 	<form action="/store" enctype="multpart/form-data" method="post" >
-
-		
-
-		{{ csrf_field() }}
-
-		
-
-		<input type="file" name="fichier">
-		<br>
-		<input type="submit" name="uploadbt" value="enter">
-	</form> -->
-
-
- 
 
 {{ Form::open(array('url' => 'upload','files' => true)) }}
    
@@ -35,17 +20,7 @@
    {{ Form::submit('Transfer') }}
 {{ Form::close() }}
 
-
-
-
 </div>
-
-
-
-
-
-
-
 
 
 </body>

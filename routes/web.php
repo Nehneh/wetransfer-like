@@ -33,6 +33,9 @@ Route::resource('/input','FormController'); // Route vers page after submit
 // Route::get('/file/store','uploadControllerTim@store');
 
 
+Route::resource("/contact",'contact');
+
+
 
 Route::get('upload','uploadControllerTim@index');
 Route::post('upload','uploadControllerTim@store');

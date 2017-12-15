@@ -5,6 +5,45 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use DB;
 
+
+class uploadControllerTim extends Controller
+{
+    //
+    public function index()
+    {
+        return view('form.index');
+    }
+
+     public function store(request $request)
+    {
+// echo $request;
+
+         $name_file_upload= $request->file('thefile');
+
+
+        if ($request->hasFile('thefile')) 
+        {
+            $request->file('thefile')->move(public_path("/uplaods"),$name_file_upload);
+            // return $request->fichier->store('public');
+
+            return 'Le fichier a bien été envoyer ';
+            # code...
+        }
+        else
+        {
+            return "Error";
+        }
+
+    // $path = $request->file('avatar')->store(
+    // 'avatars/'.$request->user()->id, 's3'
+    }
+
+}
+
+
+
+
+
 class FormController extends Controller
 {
     /**
@@ -47,6 +86,7 @@ class FormController extends Controller
         $username = $request->input('username');
         $emailfrom = $request->input('emailfrom');
         $emailto = $request->input('emailto');
+        $name_file_upload= $request->file('thefile');
 
         // echo $username; ca, ac marche
 
@@ -56,7 +96,8 @@ class FormController extends Controller
         $data = array(
             'username' =>$username,
             'emailfrom' =>$emailfrom,
-            'emailto' =>$emailto
+            'emailto' =>$emailto,
+            'nomfichier' =>$name_file_upload
         );
         DB::table('wetransfer')->insert($data);
         //echo "C'est réussi en tant que tel !";
