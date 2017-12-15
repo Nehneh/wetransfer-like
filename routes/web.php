@@ -26,16 +26,16 @@ Route::get('/',function(){
 
 //Route::post('/insert', 'FormController@insert');
 
-Route::resource('/input','FormController'); // Route vers page after submit
+//Route::resource('/input','FormController'); // Route vers page after submit
 
 // Route::resource('/input','FormController'); // Route vers page after submit
 // Route::get('/file','uploadControllerTim@index');
 // Route::get('/file/store','uploadControllerTim@store');
 
 
-Route::resource("/contact",'contact');
+Route::resource("/",'FormController');
 
 
 
-Route::get('upload','uploadControllerTim@index');
-Route::post('upload','uploadControllerTim@store');
+// Route::get('/input','FormController@index');
+// Route::post('/input','FormController@store');

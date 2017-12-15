@@ -8,11 +8,24 @@ use DB;
 
 class uploadControllerTim extends Controller
 {
-    //
+   
+
+}
+
+
+
+
+
+class FormController extends Controller
+{
+
+
+     
     public function index()
     {
-        return view('form.index');
+        return view("forms.index");
     }
+
 
      public function store(request $request)
     {
@@ -23,60 +36,11 @@ class uploadControllerTim extends Controller
 
         if ($request->hasFile('thefile')) 
         {
-            $request->file('thefile')->move(public_path("/uplaods"),$name_file_upload);
+            $request->file('thefile')->move(public_path("/input"),$name_file_upload);
             // return $request->fichier->store('public');
 
-            return 'Le fichier a bien été envoyer ';
-            # code...
-        }
-        else
-        {
-            return "Error";
-        }
 
-    // $path = $request->file('avatar')->store(
-    // 'avatars/'.$request->user()->id, 's3'
-    }
-
-}
-
-
-
-
-
-class FormController extends Controller
-{
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-        return view("forms.index");
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        // 
-
-        // Il faut recupérer les données
+                  // Il faut recupérer les données
         // apres les mettres dans un mail
 
 
@@ -105,20 +69,26 @@ class FormController extends Controller
         //Mail::to('gadri.ines@yahoo.fr')->send(new Contact($request->except('_token')));
 
 
-
-
-
-
-
-
-
-
-
-
-
-
         return view('forms.store'); 
+
+           // return 'Le fichier a bien été envoyé ';
+            # code...
+        }
+        else
+        {
+            return "Le fichier n'a pas été joint";
+        }
+
+    // $path = $request->file('avatar')->store(
+    // 'avatars/'.$request->user()->id, 's3'
     }
+
+
+
+    
+
+
+
 
     /**
      * Display the specified resource.

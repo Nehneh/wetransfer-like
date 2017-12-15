@@ -17,11 +17,8 @@ class mail extends Controller
 
 
 
-
-   public function index()
-    {
-    	return view('upload.upload');
-    }
+$post=App\Post::find(1);
+echo url ("/post/{$post->id}");
 
 
 
@@ -29,5 +26,5 @@ class mail extends Controller
 
 
 
-    
+
 }
