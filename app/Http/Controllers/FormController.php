@@ -71,13 +71,12 @@ class FormController extends Controller
         // $name_file=$$name_file_upload;
 
             Mail::send('mails.contact', 
-            array(
-                //blabla
-            ),
-            function($message) {
-                    $message->from('expediteur@toto.com');
+            $data,
+            function($message) use ($data)
+                {
+                    $message->from($data['emailfrom']);
 
-                    $message->to('naimbada@gmail.com','Utilisateur')->subject('Voici votre lien de partage de fichier');
+                    $message->to($data['emailto'],'Utilisateur')->subject('Voici votre lien de partage de fichier');
                 }
         );
 
