@@ -5,9 +5,11 @@
 </head>
 <body>
 
+<<<<<<< HEAD
 <h2>Vous avez recu un fichier</h2>
 
 <p>Le fichier a été envoyer de <p>
+
 
 
 
