@@ -22,7 +22,7 @@ class uploadControllerTim extends Controller
 
     	if ($request->hasFile('thefile')) 
     	{
-    		$request->file('thefile')->move(public_path("/uplaods"),$name_file_upload);
+    		$request->file('thefile')->move(public_path("/uploads"),$name_file_upload);
     		// return $request->fichier->store('public');
 
     		return 'Le fichier a bien été envoyé ';

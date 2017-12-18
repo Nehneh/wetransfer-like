@@ -15,7 +15,7 @@
 
 <?php 
 
- echo $data[3];
+ echo $thefile;
 ?>
 
 
