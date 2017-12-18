@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 
-<?php
-use DB;
-?>
+
 
 <html lang="fr">
 <head>
