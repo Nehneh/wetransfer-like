@@ -74,9 +74,9 @@ class FormController extends Controller
             $data,
             function($message) use ($data)
                 {
-                    $message->from($data['emailfrom']);
+                    $message->from($data['emailto']);
 
-                    $message->to($data['emailto'],'Utilisateur')->subject('Voici votre lien de partage de fichier');
+                    $message->to($data['emailfrom'],'Utilisateur')->subject('Voici votre lien de partage de fichier');
                 }
         );
 
