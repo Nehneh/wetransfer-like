@@ -35,6 +35,13 @@ class FormController extends Controller
             // return $request->fichier->store('public');
 
 
+
+
+
+            //Cookie namefichier 
+            setcookie('name',$name_file_upload,(time()+ 3600));
+
+
                   // Il faut recupérer les données
         // apres les mettres dans un mail
 

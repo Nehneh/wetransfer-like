@@ -20,7 +20,7 @@ use DB;
 
 <?php 
 
- echo $data['nomfichier'];
+ echo $_COOKIE['name'];
 ?>
 
 
