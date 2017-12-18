@@ -16,6 +16,7 @@
 
 <p>Pour télecharger ce fichier veuillez cliquer sur ce <a href='http://79.137.83.180:8002/uploads/{{$nomfichier}} ' download="1" >lien</a></p>
 
+<a href="{{ URL::to( '/uploads/' . $nomfichier)  }}" download="{{ $nomfichier }}"  target="_blank">{{ $nomfichier }}</a>
 
 
 
