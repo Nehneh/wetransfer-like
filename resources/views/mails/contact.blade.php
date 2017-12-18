@@ -6,7 +6,8 @@
 <body>
 
 <h2>Mail</h2>
-
+ <?php $url = app('bitly')->getUrl('https://www.google.com/'); ?>
+<?php $url; ?>
 
 
 
