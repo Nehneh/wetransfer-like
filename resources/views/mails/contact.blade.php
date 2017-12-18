@@ -16,11 +16,6 @@
 
 <p>Pour télecharger ce fichier veuillez cliquer sur ce magnifique lien :</p>
 
-<?php 
-
- echo $_COOKIE['name'];
-
-?>
 
 
 
