@@ -18,13 +18,13 @@
 
 
 
+<?php 
+
+echo '<a href=79.137.83.180:8002/uploads/'.{{$nomfichier}}.'></a>';
 
 
-{{$nomfichier}}
 
-
-
-
+ ?>
 
 
 
