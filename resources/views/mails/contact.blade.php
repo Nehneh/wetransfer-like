@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+
+<?php
+use DB;
+?>
+
 <html lang="fr">
 <head>
 <meta charset="utf-8">
@@ -15,7 +20,7 @@
 
 <?php 
 
- echo $thefile;
+ echo $data['nomfichier'];
 ?>
 
 
