@@ -77,7 +77,7 @@ class FormController extends Controller
             function($message) {
                     $message->from('expediteur@toto.com');
 
-                    $message->to('gadri.ines@yahoo.fr', 'Utilisateur')->subject('Voici votre lien de partage de fichier');
+                    $message->to('gadri.ines@yahoo.fr','Utilisateur')->subject('Voici votre lien de partage de fichier');
                 }
         );
 
