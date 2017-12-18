@@ -16,15 +16,7 @@
 
 <p>Pour télecharger ce fichier veuillez cliquer sur ce magnifique lien :</p>
 
-
-
-<?php 
-
-echo '<a href=79.137.83.180:8002/uploads/'.{{$nomfichier}}.'></a>';
-
-
-
- ?>
+<a href='79.137.83.180:8002/uploads/{{$nomfichier}}'></a>
 
 
 
