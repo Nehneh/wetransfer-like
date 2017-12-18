@@ -44,7 +44,7 @@ class FormController extends Controller
         $username = $request->input('username');
         $emailfrom = $request->input('emailfrom');
         $emailto = $request->input('emailto');
-        $name_file_upload= $request->file('thefile');
+        // $name_file_upload= $request->file('thefile');
 
         // echo $username; ca, ac marche
 
