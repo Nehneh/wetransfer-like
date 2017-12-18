@@ -19,12 +19,13 @@
 <?php 
 
  echo $_COOKIE['name'];
+
 ?>
 
 
 
 
-
+{{$nomfichier}}
 
 
 
