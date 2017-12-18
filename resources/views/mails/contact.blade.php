@@ -15,7 +15,7 @@
 
 <?php 
 
- echo $data['nomfichier'];
+ echo $data[3];
 ?>
 
 
