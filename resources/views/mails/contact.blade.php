@@ -5,8 +5,9 @@
 </head>
 <body>
 
-<h2>Mail</h2>
+<h2>Vous avez recu un fichier</h2>
 
+<p>Le fichier a été envoyer de <p>
 
 
 

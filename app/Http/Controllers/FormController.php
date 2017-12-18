@@ -25,7 +25,8 @@ class FormController extends Controller
     {
 // echo $request;
 
-         $name_file_upload= $request->file('thefile');
+         // $name_file_upload= $request->file('thefile');
+         $name_file_upload= $request->file('thefile')->getClientOriginalName();
 
 
         if ($request->hasFile('thefile')) 
