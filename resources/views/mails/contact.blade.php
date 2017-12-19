@@ -9,7 +9,7 @@
 <body>
 
 
-<h2> Un ami veut vous faire partager un fichier  </h2>
+<h2> Un ami veut vous faire partager un fichier </h2>
 
 
 

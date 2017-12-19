@@ -5,12 +5,9 @@
 @endsection
 
 @section ('content')
-	<div class="row col-sm-6">
-		<h1 center bleu>Le fichier a bien été envoyé</h1>
-	</div>
+			<h1 class= "center bleu">Le fichier a bien été envoyé</h1>
+	
 		
-
-
 @endsection
 
 
