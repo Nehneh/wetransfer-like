@@ -36,18 +36,3 @@ Route::get('/',function(){
 Route::resource("/",'FormController');
 
 Route::resource("mails.contact",'FormController');
-
-
-
-<<<<<<< HEAD
-Route::get('upload','uploadControllerTim@index');
-Route::post('upload','uploadControllerTim@store');
-
-
-
-// daNS LIDEAL 
-// Route::resource('/', CONTROLLERFINALVECLAFONCTIONSTOREDBMAIL )
-=======
-// Route::get('/input','FormController@index');
-// Route::post('/input','FormController@store');
->>>>>>> 096cc42b6a92a077235c54d5bf5903249a0f4b12
