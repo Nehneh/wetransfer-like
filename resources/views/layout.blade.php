@@ -3,11 +3,12 @@
 <head>
 	<meta charset="utf-8">
 	<title> @yield ('title')</title>
-	<link rel="stylesheet" type="text/css">
+		<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" >
+	{{ HTML::style('css/style.css')}}
 
-	@yield('custom_css')
-	
 </head>
+
 <body>
 
 	@yield ('content')

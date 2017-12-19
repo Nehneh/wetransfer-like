@@ -1,11 +1,21 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
+@extends ('layout')
 
-	<h1>Le fichier a bien été envoyé</h1>
+@section ('title')
+	MEGATEAM-TRANSFER
+@endsection
 
-</body>
-</html>
+@section ('content')
+		<!-- <div></div> -->
+	<div class="row col-sm-6">
+		<h1>Le fichier a bien été envoyé</h1>
+	</div>
+		
+
+
+@endsection
+
+
+
+
+	
+

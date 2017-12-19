@@ -1,0 +1,20 @@
+
+.police{
+		size: 20px;
+		color: black;
+		background-color: blue;
+	}
+
+
+body{
+		background-color: #white;
+	}
+	.fond{
+
+	}
+	.logo
+	{
+		background-image: url('img/logo.jpg');
+	}
+
+
