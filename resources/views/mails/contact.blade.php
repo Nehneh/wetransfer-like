@@ -19,31 +19,5 @@
 <!-- <a href="{{ URL::to( '/uploads/' . $nomfichier)  }}" download="{{ $nomfichier }}"  target="_blank">{{ $nomfichier }}</a> -->
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
 </html>

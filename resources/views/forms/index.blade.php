@@ -17,7 +17,7 @@
 
 	<style type="text/css">
 	body{
-		background-color: blue;
+		background-color: #E2FFC1;
 	}
 	.fond{
 
