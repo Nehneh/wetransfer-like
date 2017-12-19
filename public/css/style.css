@@ -2,19 +2,13 @@
 .police{
 		size: 20px;
 		color: black;
-		background-color: blue;
+		font-family: 'Bungee', cursive;
 	}
 
 
 body{
-		background-color: #white;
+		background-color: black;
 	}
-	.fond{
 
-	}
-	.logo
-	{
-		background-image: url('img/logo.jpg');
-	}
 
 

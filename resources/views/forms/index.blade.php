@@ -5,7 +5,6 @@
 @endsection
 
 @section ('content')
-		<!-- <div></div> -->
 	<div class="row col-sm-6">
 		<div class="fond">
 		
