@@ -2,8 +2,16 @@
 <html lang="fr">
 @include('template.header')
 <body>
-<img src="logo.jpg">
-	@yield ('content')
+	<div class="container">
+
+		<div  class="col-sm-4"></div>
+		<div  class="col-sm-4"><img src="img/logo.jpg"></div>
+		<div  class="col-sm-4"></div>
+		
+	</div>
+
+
+		@yield ('content')
 
 
 
