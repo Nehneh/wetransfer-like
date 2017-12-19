@@ -5,10 +5,7 @@
 @endsection
 
 @section ('content')
-	<div class="container">
-		<div class="row">
-			<div  class="col-sm-4"></div>
-			<div  class="col-sm-4 center">
+	
 				<h1 class="center"><span class="bleu">ME</span><span class="vert">GA</span><span class="jaune">TE</span><span class="orange">AM</span> <h1 class="center"><span class="bleu">TR</span><span class="vert">AN</span><span class="jaune">SF</span><span class="orange">ER</span> </h1><br><br><br> <p>Partage de fichiers sur le web</p>
 		
 			{{ Form::open(array('url' => '/','files' => true)) }}
@@ -19,10 +16,8 @@
 		    {{ Form::file('thefile') }}
 		    <br><br>
 		    {{ Form::submit('Transfer') }}
-		    {{ Form::close() }}</div>
-			<div  class="col-sm-4"></div>
-		</div>		
-	</div>
+		    {{ Form::close() }}
+			
 			
 	
 
