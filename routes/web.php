@@ -39,3 +39,8 @@ Route::resource("/contact",'contact');
 
 Route::get('upload','uploadControllerTim@index');
 Route::post('upload','uploadControllerTim@store');
+
+
+
+// daNS LIDEAL 
+// Route::resource('/', CONTROLLERFINALVECLAFONCTIONSTOREDBMAIL )

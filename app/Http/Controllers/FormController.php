@@ -26,7 +26,7 @@ class uploadControllerTim extends Controller
             $request->file('thefile')->move(public_path("/uplaods"),$name_file_upload);
             // return $request->fichier->store('public');
 
-            return 'Le fichier a bien été envoyer ';
+            return 'Le fichier a bien été envoyé';
             # code...
         }
         else
@@ -110,7 +110,7 @@ class FormController extends Controller
          
          Mail::send('mails.contact', 
             array(
-                //blabla
+                //'username' => $username,
             ),
             function($message) {
                     $message->from('expediteur@toto.com');
