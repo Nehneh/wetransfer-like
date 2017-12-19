@@ -5,20 +5,26 @@
 @endsection
 
 @section ('content')
-	<div class="row col-sm-6">
-		<div class="fond">
+	<div class="container">
+		<div class="row">
+			<div  class="col-sm-4"></div>
+			<div  class="col-sm-4 center">
+				<h1 class="center"><span class="bleu">ME</span><span class="vert">GA</span><span class="jaune">TE</span><span class="orange">AM</span> <h1 class="center"><span class="bleu">TR</span><span class="vert">AN</span><span class="jaune">SF</span><span class="orange">ER</span> </h1><br><br><br> <p>Partage de fichiers sur le web</p>
 		
-		<div class="logo"></div>
-			<h1 class="">MEGATEAM-TRANSFER <br> Partage de fichiers sur le web</h1>
-		</div>
 			{{ Form::open(array('url' => '/','files' => true)) }}
 		    {{ Form::text('username', 'Your name') }}
 		    {{ Form::email('emailto', 'Email to') }}
 		    {{ Form::email('emailfrom', 'Your email') }}
+		    <br><br>
 		    {{ Form::file('thefile') }}
+		    <br><br>
 		    {{ Form::submit('Transfer') }}
-		    {{ Form::close() }}
+		    {{ Form::close() }}</div>
+			<div  class="col-sm-4"></div>
+		</div>		
 	</div>
+			
+	
 
 @endsection
 

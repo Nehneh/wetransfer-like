@@ -1,14 +1,38 @@
 
-.police{
+*{
 		size: 20px;
-		color: black;
+		color: grey;
 		font-family: 'Bungee', cursive;
 	}
 
 
 body{
-		background-color: black;
+		background-color: #white;
 	}
 
+.center{
+	text-align: center;
+	align-content: center;
+	align-items: center;
+}
+
+.vert{
+
+	 color: #1E8561;
+
+	 }
+
+.orange{
+
+	 color: #ED4529;
+
+	 }
+ 
+.bleu { 
+	color: #30A5D1;
+	} 	
 
 
+.jaune {
+		color: #DEC83F;
+		} 	

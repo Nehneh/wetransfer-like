@@ -6,7 +6,7 @@
 
 @section ('content')
 	<div class="row col-sm-6">
-		<h1>Le fichier a bien été envoyé</h1>
+		<h1 center bleu>Le fichier a bien été envoyé</h1>
 	</div>
 		
 
